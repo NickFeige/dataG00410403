@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Store</title>
+</head>
+<body>
+    <h1>Edit Store <%= store.sid %></h1>
+    <form action="/stores/edit/<%= store.sid %>" method="POST">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" value="<%= store.location %>">
+        <label for="mgrid">Manager ID:</label>
+        <input type="text" id="mgrid" name="mgrid" value="<%= store.mgrid %>">
+        <button type="submit">Update Store</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        <% products.forEach(product => { %>
+            <li>
+                <%= product.pid %> - <%= product.productdesc %> - <%= product.sid %> - <%= product.location %> - <%= product.price %>
+                <a href="/products/delete/<%= product.pid %>">Delete</a>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stores</title>
+</head>
+<body>
+    <h1>Stores</h1>
+    <ul>
+        <% stores.forEach(store => { %>
+            <li>
+                <%= store.sid %> - <%= store.location %> - <%= store.mgrid %>
+                <a href="/stores/edit/<%= store.sid %>">Edit</a>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
